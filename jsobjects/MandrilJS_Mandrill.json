@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "MandrilJS",
+    "pageId": "Mandrill",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tsetUpperCaseState: (state) => {\n\t\t\n\tif(state == 'sent'){\n\t\treturn 'Sent'\n\t}\n\t\telse if(state == 'soft-bounced'){\n\t\t\treturn 'Soft-Bounced'\n\t\t}\n\t\telse if(state == 'rejected'){\n\t\t\treturn 'Rejected'\n\t\t}\n\t},\n\t\n\tgetDate: (date) => {\n\t\tdate = new Date().setDate(new Date().getDate()-7);\n\t\treturn new Date(date).toISOString();\n}\n}",
+    "variables": []
+  },
+  "id": "Mandrill_MandrilJS",
+  "deleted": false,
+  "gitSyncId": "622f3128c34ae834fa67dca8_6260f83bc34ae834fa67dd91"
+}

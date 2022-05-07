@@ -1,0 +1,22 @@
+{
+  "isPublic": false,
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "62209b1ad3c3445dc922fcf6",
+  "color": "#E4D8CC",
+  "icon": "couples",
+  "slug": "sandbox-do-not-use",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "evaluationVersion": 2,
+  "createdAt": {
+    "seconds": 1647259944,
+    "nanos": 678000000
+  },
+  "deleted": false
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "widgets_values",
+    "pageId": "Database Upgrade Copy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tcontainer1_button1_text: () => {\n\t\t\n\t\tif(appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances') {\n\t\t\treturn 'Show Property'\n\t\t}\n\t\t\n\t\telse {\n\t\t\treturn 'Show Customer'\n\t\t}\n\t},\n  \n\t\n container1_value: () => {\n\t \n\treturn set_container_data.myFun1(select_record,appsmith.store.table);\n\t \n },\n\t\n\tcontainer2_value: () => {\n\t\t\n\t\tif(appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances'){\n\t\t\treturn set_container_data.myFun1(container2_select_record,'properties')\n\t\t}\n\t\t\n\t\telse if (appsmith.store.table === 'invoices'){\n\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t}\n\t\t\n\t},\n\t\n\tcontainer3_value: () => {\n\t\treturn set_container_data.myFun1(container3_select_record, 'customers');\n\t},\n\t\n\ttest: () => {\n\t\treturn appsmith.store.query;\n\t}\n\t\n}",
+    "variables": []
+  },
+  "id": "Database Upgrade Copy_widgets_values",
+  "deleted": false,
+  "gitSyncId": "622f3128c34ae834fa67dca8_62752e8dc34ae834fa67de65"
+}

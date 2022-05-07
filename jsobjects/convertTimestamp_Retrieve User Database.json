@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "convertTimestamp",
+    "pageId": "Retrieve User Database",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\nconvertTimestamp: (timestamp)=>{\n\t\n\treturn new Date(parseInt(timestamp));\n},\n\ncheckExpire: (ttl,timestamp) => {\n\t\n\tif(timestamp < ttl){\n\t\treturn \"No\"\n\t}\n\telse {\n\t\treturn \"Yes\"\n\t}\n}\t\n\t\n}",
+    "variables": []
+  },
+  "id": "Retrieve User Database_convertTimestamp",
+  "deleted": false,
+  "gitSyncId": "622f3128c34ae834fa67dca8_6239eea0c34ae834fa67dd1e"
+}

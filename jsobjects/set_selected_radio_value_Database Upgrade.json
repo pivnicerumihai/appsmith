@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "set_selected_radio_value",
+    "pageId": "Database Upgrade",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: (selectedRecord) => {\n\t\tswitch (selectedRecord){\n\t\t\t\t\n\t\t\tcase 'Gas Certificate':\n\t\t\t\treturn 'gscert_id';\n\t\t\t\t\n\t\t\tcase 'Gas Appliance':\n\t\t\t\treturn 'appliance_id';\n\t\t\t\n\t\t\tcase 'Customer':\n\t\t\t\treturn 'customer_id';\n\t\t\t\t\n\t\t\tcase \"Job Address\":\n\t\t\t\treturn 'property_id';\n\t\t\t\n\t\t\tcase \"Job\":\n\t\t\t\treturn 'job_id';\n\t\t\t\t\n\t\t\tcase \"Invoice\":\n\t\t\t\treturn 'invoice_id';\n\t\t\t\n\t\t\tcase \"Cost\":\n\t\t\t\treturn 'cost_id';\n\t\t\t\t\n\t\t\tcase \"Email\":\n\t\t\t\treturn 'email_id';\n\t\t\t\t\n\t\t\tcase \"Gas Service\":\n\t\t\t\treturn 'gasservice_id'\n\t\t\t\t\n\t\t\tcase \"ND Catering\":\n\t\t\t\treturn 'ndcatering_id'\n\t\t\t\n\t\t\tcase \"Oil Appliance\":\n\t\t\t\treturn 'oilappliance_id'\n\t\t\t\t\n\t\t\tcase \"CD 11\":\n\t\t\t\treturn \"cd11_id\"\n\t\t\t\t\n\t\t\tcase \"Legionella\":\n\t\t\t\treturn \"legionella_id\"\n\t\t\t\n\t\t\tcase \"Event\":\n\t\t\t\treturn \"event_id\"\n\t\t\t\t\n\t\t\tcase \"Inspection\":\n\t\t\t\treturn \"inspection_id\"\n\t\t\t\n\t\t\tcase \"Job Sheet\":\n\t\t\t\treturn \"jobrec_id\"\n\t\t\t\t\n\t\t\t\tcase \"CP2 Cert\":\n\t\t\t\treturn \"cp2cert_id\"\n\t\t\t\t\n\t\t\tdefault:\n\t\t\t\treturn 'null'\n\t\t}\n\t}\n\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Database Upgrade_set_selected_radio_value",
+  "deleted": false,
+  "gitSyncId": "622f3128c34ae834fa67dca8_62677de8c34ae834fa67dddb"
+}

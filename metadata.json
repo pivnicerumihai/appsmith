@@ -1,0 +1,29 @@
+{
+  "fileFormatVersion": 1,
+  "clientSchemaVersion": 1,
+  "serverSchemaVersion": 1,
+  "publishedDefaultPageName": "Database Lookup",
+  "unpublishedDefaultPageName": "Database Lookup",
+  "editModeTheme": {
+    "name": "Classic",
+    "isSystemTheme": true,
+    "deleted": false,
+    "policies": []
+  },
+  "publishedTheme": {
+    "name": "Classic",
+    "isSystemTheme": true,
+    "deleted": false,
+    "policies": []
+  },
+  "publishedLayoutmongoEscapedWidgets": {
+    "Mandrill": [
+      "mandrill_table"
+    ]
+  },
+  "unpublishedLayoutmongoEscapedWidgets": {
+    "Mandrill": [
+      "mandrill_table"
+    ]
+  }
+}
