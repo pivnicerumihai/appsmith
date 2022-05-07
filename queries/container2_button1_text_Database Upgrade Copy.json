@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "test",
-    "fullyQualifiedName": "widgets_values.test",
+    "name": "container2_button1_text",
+    "fullyQualifiedName": "widgets_values.container2_button1_text",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\treturn appsmith.store;\n\t}",
+      "body": "() => {\n\tif(appsmith.store.container2_record_type === 'jobs'){\n\t\treturn 'Show Property'\n\t}\nelse if(appsmith.store.container2_record_type === 'properties'){\n\treturn 'Show Customer'\n}\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\treturn appsmith.store;\n\t}"
+      "() => {\n\tif(appsmith.store.container2_record_type === 'jobs'){\n\t\treturn 'Show Property'\n\t}\nelse if(appsmith.store.container2_record_type === 'properties'){\n\treturn 'Show Customer'\n}\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Database Upgrade Copy_test",
+  "id": "Database Upgrade Copy_container2_button1_text",
   "deleted": false,
-  "gitSyncId": "622f3128c34ae834fa67dca8_6275455ec34ae834fa67de79"
+  "gitSyncId": "622f3128c34ae834fa67dca8_6276273dc34ae834fa67de85"
 }

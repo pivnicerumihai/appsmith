@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t \n\treturn set_container_data.myFun1(select_record,appsmith.store.table);\n\t \n }",
+      "body": "() => {\n\t \n\treturn set_container_data.myFun1(select_record.data[0],appsmith.store.table);\n\t \n }",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t \n\treturn set_container_data.myFun1(select_record,appsmith.store.table);\n\t \n }"
+      "() => {\n\t \n\treturn set_container_data.myFun1(select_record.data[0],appsmith.store.table);\n\t \n }"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
