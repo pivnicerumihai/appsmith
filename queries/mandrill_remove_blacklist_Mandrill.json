@@ -24,6 +24,7 @@
         }
       ],
       "encodeParamsToggle": true,
+      "queryParameters": [],
       "body": "{\n\t\"key\":\"EnVLEvt8FNJIsToNPSd2DA\",\n\t\"email\":\"russelshaw96@gmail.com\"\n}",
       "httpMethod": "POST",
       "formData": {

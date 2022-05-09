@@ -646,8 +646,7 @@
               "name": "search_mandrill_email",
               "pluginType": "API",
               "jsonPathKeys": [
-                "DatePicker1.selectedDate",
-                "appsmith.store.email != \"\" ? appsmith.store.email : input_mandrill_email_address.text"
+                "appsmith.URL.queryParams.email"
               ],
               "timeoutInMillisecond": 10000
             }

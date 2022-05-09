@@ -23,9 +23,9 @@
           "value": "application/json"
         }
       ],
-      "encodeParamsToggle": true,
+      "encodeParamsToggle": false,
       "queryParameters": [],
-      "body": "{\n\"key\":\"EnVLEvt8FNJIsToNPSd2DA\",\n\"query\":{{appsmith.store.email != \"\" ? appsmith.store.email : input_mandrill_email_address.text}},\n\"date_from\": {{DatePicker1.selectedDate}},\n\"date_to\": \"20-04-2022\"\n\n}",
+      "body": "{\n\"key\":\"EnVLEvt8FNJIsToNPSd2DA\",\n\"query\":'{{appsmith.URL.queryParams.email}}',\n\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "formData": {
@@ -42,8 +42,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "DatePicker1.selectedDate",
-      "appsmith.store.email != \"\" ? appsmith.store.email : input_mandrill_email_address.text"
+      "appsmith.URL.queryParams.email"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
