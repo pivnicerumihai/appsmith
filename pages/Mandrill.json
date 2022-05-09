@@ -27,9 +27,14 @@
           "children": [
             {
               "widgetName": "input_mandrill_email_address",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595.svg",
-              "onSubmit": "{{navigateTo('Mandrill',{email:input_mandrill_email_address.text})}}",
+              "onSubmit": "{{navigateTo('Mandrill',{email:input_mandrill_email_address.text});\nsearch_mandrill_email.run()\n}}",
               "topRow": 0,
               "bottomRow": 4,
               "parentRowSpace": 10,
@@ -43,7 +48,7 @@
                   "key": "onSubmit"
                 }
               ],
-              "resetOnSubmit": true,
+              "resetOnSubmit": false,
               "leftColumn": 11,
               "dynamicBindingPathList": [
                 {
@@ -64,7 +69,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "iconAlign": "left",
-              "defaultText": "{{appsmith.URL.queryParams.email !== null ? appsmith.URL.queryParams.email : null}}"
+              "defaultText": "{{appsmith.URL.queryParams.email != null ? appsmith.URL.queryParams.email : null}}"
             },
             {
               "widgetName": "Text1",
