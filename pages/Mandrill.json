@@ -639,7 +639,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Mandrill_search_mandrill_email",
+              "name": "search_mandrill_email",
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "DatePicker1.selectedDate",
+                "appsmith.store.email != \"\" ? appsmith.store.email : input_mandrill_email_address.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
           "DatePicker1",
           "MainContainer",
