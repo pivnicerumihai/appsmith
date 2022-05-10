@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM {{appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? \"properties\" : appsmith.store.table === 'emails' ? 'jobs' : 'customers'}} WHERE {{appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? 'property_id' : appsmith.store.table === 'emails' ? 'job_id' : 'customer_id'}} = {{appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? select_record.data[0].property_id : appsmith.store.table === 'emails' ?  select_record.data[0].job_id : select_record.data[0].customer_id}}\n",
+      "body": "SELECT * FROM {{appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? \"properties\" : appsmith.store.table === 'emails' ? 'jobs' : 'customers'}} WHERE {{appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? 'property_id' : appsmith.store.table === 'emails' ? 'job_id' : 'customer_id'}} = {{appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? select_record.data[0].property_id : appsmith.store.table === 'emails' ?  select_record.data[0].job_id : null}}\n",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -36,7 +36,7 @@
     "jsonPathKeys": [
       "appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? \"properties\" : appsmith.store.table === 'emails' ? 'jobs' : 'customers'",
       "appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? 'property_id' : appsmith.store.table === 'emails' ? 'job_id' : 'customer_id'",
-      "appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? select_record.data[0].property_id : appsmith.store.table === 'emails' ?  select_record.data[0].job_id : select_record.data[0].customer_id"
+      "appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances' ? select_record.data[0].property_id : appsmith.store.table === 'emails' ?  select_record.data[0].job_id : null"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

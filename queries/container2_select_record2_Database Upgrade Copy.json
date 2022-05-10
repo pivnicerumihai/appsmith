@@ -24,7 +24,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -38,7 +38,7 @@
       "appsmith.store.table === 'invoices' ? 'jobs' : null",
       "appsmith.store.table === 'invoices' ? select_record.data[0].job_id : null"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []

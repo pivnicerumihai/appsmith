@@ -17,14 +17,14 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM {{appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'appliances' ? \"properties\" : \"customers\"}} WHERE {{appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'appliances' ? 'property_id' : 'customer_id'}} = {{container2_select_record2.data[0].property_id}}",
+      "body": "SELECT * FROM {{appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'appliances' ? \"properties\" : \"customers\"}} WHERE {{appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'appliances' ? 'property_id' : 'customer_id'}} = {{appsmith.store.container2_record_type === 'properties' ? container2_select_record.data[0].customer_id : null}}",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +36,9 @@
     "jsonPathKeys": [
       "appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'appliances' ? \"properties\" : \"customers\"",
       "appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'appliances' ? 'property_id' : 'customer_id'",
-      "container2_select_record2.data[0].property_id"
+      "appsmith.store.container2_record_type === 'properties' ? container2_select_record.data[0].customer_id : null"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
