@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\n\t\tif(appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances') {\n\t\t\treturn 'Show Property'\n\t\t}\n\t\telse if(appsmith.store.table === 'emails'){\n\t\t\treturn 'Show Job'\n\t\t}\n\t\t\n\t\telse {\n\t\t\treturn 'Show Customer'\n\t\t}\n\t}",
+      "body": "() => {\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'jobs':\n\t\t\t\treturn 'Show Property';\n\t\t\tcase 'appliances':\n\t\t\t\treturn 'Show Property';\n\t\t\tcase 'emails':\n\t\t\t\treturn 'Show Job';\n\t\t}\n\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\n\t\tif(appsmith.store.table === 'jobs' || appsmith.store.table === 'appliances') {\n\t\t\treturn 'Show Property'\n\t\t}\n\t\telse if(appsmith.store.table === 'emails'){\n\t\t\treturn 'Show Job'\n\t\t}\n\t\t\n\t\telse {\n\t\t\treturn 'Show Customer'\n\t\t}\n\t}"
+      "() => {\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'jobs':\n\t\t\t\treturn 'Show Property';\n\t\t\tcase 'appliances':\n\t\t\t\treturn 'Show Property';\n\t\t\tcase 'emails':\n\t\t\t\treturn 'Show Job';\n\t\t}\n\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

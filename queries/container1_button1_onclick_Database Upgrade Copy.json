@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\n\t\n\t\t\n\t//select query and table to pull data from\n\t\tif(appsmith.store.table === 'jobs'){\n\t\t\tstoreValue('query', container2_select_record.data[0]);\n\t\t\tstoreValue('container2_record_type','properties');\n\t\t}\n\t\tif(appsmith.store.table === 'invoices'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'customers');\n\t\t}\n\t\telse if(appsmith.store.table === 'emails'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'jobs');\n\t\t}\n\t\t\n\t\t\t//query to run\n\t\tcontainer2_select_record.run();\n\t}",
+      "body": "() => {\n\t\t\n\t\t\t\t//query to run\n\t\tcontainer2_select_record.run();\n\t\t\n\t//select query and table to pull data from\n\t\tif(appsmith.store.table === 'jobs'){\n\t\t\tstoreValue('query', container2_select_record.data[0]);\n\t\t\tstoreValue('container2_record_type','properties');\n\t\t}\n\t\tif(appsmith.store.table === 'invoices'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'customers');\n\t\t}\n\t\telse if(appsmith.store.table === 'emails'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'jobs');\n\t\t}\n\t\t\n\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\n\t\n\t\t\n\t//select query and table to pull data from\n\t\tif(appsmith.store.table === 'jobs'){\n\t\t\tstoreValue('query', container2_select_record.data[0]);\n\t\t\tstoreValue('container2_record_type','properties');\n\t\t}\n\t\tif(appsmith.store.table === 'invoices'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'customers');\n\t\t}\n\t\telse if(appsmith.store.table === 'emails'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'jobs');\n\t\t}\n\t\t\n\t\t\t//query to run\n\t\tcontainer2_select_record.run();\n\t}"
+      "() => {\n\t\t\n\t\t\t\t//query to run\n\t\tcontainer2_select_record.run();\n\t\t\n\t//select query and table to pull data from\n\t\tif(appsmith.store.table === 'jobs'){\n\t\t\tstoreValue('query', container2_select_record.data[0]);\n\t\t\tstoreValue('container2_record_type','properties');\n\t\t}\n\t\tif(appsmith.store.table === 'invoices'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'customers');\n\t\t}\n\t\telse if(appsmith.store.table === 'emails'){\n\t\tstoreValue('query',container2_select_record.data[0]);\n\t\tstoreValue('container2_record_type', 'jobs');\n\t\t}\n\t\t\n\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
