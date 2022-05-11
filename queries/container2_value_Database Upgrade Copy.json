@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'jobs':\n\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'appliances':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'invoices':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'emails':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t}\n\t\n\t\t\n\t}",
+      "body": "() => {\n\t\t\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'properties':\n\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'jobs':\n\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'appliances':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'invoices':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'emails':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'costs':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t}\n\t\n\t\t\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'jobs':\n\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'appliances':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'invoices':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'emails':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t}\n\t\n\t\t\n\t}"
+      "() => {\n\t\t\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'properties':\n\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'jobs':\n\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'appliances':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'invoices':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'emails':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t\tcase 'costs':\n\t\t\t\t\treturn set_container_data.myFun1(appsmith.store.query, appsmith.store.container2_record_type);\n\t\t}\n\t\n\t\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

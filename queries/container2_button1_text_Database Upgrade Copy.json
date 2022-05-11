@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\tif(appsmith.store.container2_record_type === 'jobs'){\n\t\treturn 'Show Property'\n\t}\nelse if(appsmith.store.container2_record_type === 'properties'){\n\treturn 'Show Customer'\n}\n}",
+      "body": "() => {\n\t\t\n\t\tswitch(appsmith.store.container2_record_type){\n\t\t\tcase 'jobs':\n\t\t\t\treturn 'Show Property';\n\t\t\tcase 'properties':\n\t\t\t\treturn 'Show Customer';\n\t\t\tcase 'emails':\n\t\t\t\treturn 'Show Job';\n\t\t}\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\tif(appsmith.store.container2_record_type === 'jobs'){\n\t\treturn 'Show Property'\n\t}\nelse if(appsmith.store.container2_record_type === 'properties'){\n\treturn 'Show Customer'\n}\n}"
+      "() => {\n\t\t\n\t\tswitch(appsmith.store.container2_record_type){\n\t\t\tcase 'jobs':\n\t\t\t\treturn 'Show Property';\n\t\t\tcase 'properties':\n\t\t\t\treturn 'Show Customer';\n\t\t\tcase 'emails':\n\t\t\t\treturn 'Show Job';\n\t\t}\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

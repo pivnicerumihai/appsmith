@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "container2_button1_onclick",
-    "fullyQualifiedName": "widget_events.container2_button1_onclick",
+    "name": "container1_menu_button1_onclick",
+    "fullyQualifiedName": "widget_events.container1_menu_button1_onclick",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\n\t\tcontainer3_select_record.run();\n\t\n\t}",
+      "body": "() => {\n\t\tcontainer2_select_record.run();\n\t\t\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'invoices':\n\t\t\t\tstoreValue('query',container2_select_record.data[0]);\n\t\t\t\tstoreValue('container2_record_type', 'customer');\n\t\t\t\tbreak;\n\t\t}\n\t\t\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\n\t\tcontainer3_select_record.run();\n\t\n\t}"
+      "() => {\n\t\tcontainer2_select_record.run();\n\t\t\n\t\tswitch(appsmith.store.table){\n\t\t\tcase 'invoices':\n\t\t\t\tstoreValue('query',container2_select_record.data[0]);\n\t\t\t\tstoreValue('container2_record_type', 'customer');\n\t\t\t\tbreak;\n\t\t}\n\t\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Database Upgrade Copy_container2_button1_onclick",
+  "id": "Database Upgrade Copy_container1_menu_button1_onclick",
   "deleted": false,
-  "gitSyncId": "622f3128c34ae834fa67dca8_62753b64c34ae834fa67de73"
+  "gitSyncId": "622f3128c34ae834fa67dca8_627b9ae8c34ae834fa67ded7"
 }
