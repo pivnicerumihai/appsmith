@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1280,
+          "rightColumn": 1296,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -309,13 +309,16 @@
                           "key": "primaryColumns.created.computedValue"
                         },
                         {
-                          "key": "primaryColumns.email_id.computedValue"
+                          "key": "primaryColumns.notes.computedValue"
                         },
                         {
-                          "key": "primaryColumns.job_id.computedValue"
+                          "key": "primaryColumns.archive.computedValue"
                         },
                         {
                           "key": "primaryColumns.gscert_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.job_id.computedValue"
                         },
                         {
                           "key": "primaryColumns.customer_id.computedValue"
@@ -339,10 +342,10 @@
                           "key": "primaryColumns.issued.computedValue"
                         },
                         {
-                          "key": "primaryColumns.modifiedby.computedValue"
+                          "key": "primaryColumns.email_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.notes.computedValue"
+                          "key": "primaryColumns.modifiedby.computedValue"
                         },
                         {
                           "key": "primaryColumns.accessible.computedValue"
@@ -379,9 +382,6 @@
                         },
                         {
                           "key": "primaryColumns.islandlord.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.archive.computedValue"
                         },
                         {
                           "key": "primaryColumns.co_alarm_tested.computedValue"
@@ -472,10 +472,10 @@
                           "label": "company_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.company_id))}}"
                         },
-                        "email_id": {
-                          "index": 0,
+                        "notes": {
+                          "index": 13,
                           "width": 150,
-                          "id": "email_id",
+                          "id": "notes",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -486,13 +486,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "email_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email_id))}}"
+                          "label": "notes",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}"
                         },
-                        "job_id": {
-                          "index": 1,
+                        "archive": {
+                          "index": 28,
                           "width": 150,
-                          "id": "job_id",
+                          "id": "archive",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -503,8 +503,8 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "job_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.job_id))}}"
+                          "label": "archive",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.archive))}}"
                         },
                         "gscert_id": {
                           "index": 0,
@@ -522,6 +522,23 @@
                           "isDerived": false,
                           "label": "gscert_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gscert_id))}}"
+                        },
+                        "job_id": {
+                          "index": 1,
+                          "width": 150,
+                          "id": "job_id",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "job_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.job_id))}}"
                         },
                         "customer_id": {
                           "index": 2,
@@ -642,6 +659,23 @@
                           "label": "issued",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.issued))}}"
                         },
+                        "email_id": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "email_id",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "email_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email_id))}}"
+                        },
                         "modifiedby": {
                           "index": 12,
                           "width": 150,
@@ -658,23 +692,6 @@
                           "isDerived": false,
                           "label": "modifiedby",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.modifiedby))}}"
-                        },
-                        "notes": {
-                          "index": 13,
-                          "width": 150,
-                          "id": "notes",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "notes",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}"
                         },
                         "accessible": {
                           "index": 14,
@@ -879,23 +896,6 @@
                           "isDerived": false,
                           "label": "islandlord",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.islandlord))}}"
-                        },
-                        "archive": {
-                          "index": 28,
-                          "width": 150,
-                          "id": "archive",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "archive",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.archive))}}"
                         },
                         "co_alarm_tested": {
                           "index": 29,
@@ -1149,7 +1149,7 @@
                           "onClick": "{{widget_events.container1_menubutton2_onclick()}}"
                         }
                       },
-                      "isVisible": "{{appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'customers' || appsmith.store.container2_record_type === 'emails'? false : true}}",
+                      "isVisible": "{{appsmith.store.container2_record_type === 'jobs' || appsmith.store.container2_record_type === 'customers' || appsmith.store.container2_record_type === 'emails'|| appsmith.store.container2_record_type === 'properties'? false : true}}",
                       "label": "Search",
                       "version": 1,
                       "parentId": "mrnctdb5kh",
@@ -1203,7 +1203,7 @@
                       "isDefaultClickDisabled": true,
                       "iconName": "arrow-right",
                       "widgetId": "fv07sj69r2",
-                      "isVisible": "{{appsmith.store.container2_record_type === 'customers'  ? false : appsmith.store.container2_record_type === 'jobs' ? true :\nappsmith.store.container2_record_type === 'emails'? true : false}}",
+                      "isVisible": "{{appsmith.store.container2_record_type === 'customers'  ? false : appsmith.store.container2_record_type === 'jobs' ? true :\nappsmith.store.container2_record_type === 'emails'? true : appsmith.store.container2_record_type === 'properties' ? true : false}}",
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "mrnctdb5kh",
@@ -1547,7 +1547,7 @@
                       "isDefaultClickDisabled": true,
                       "iconName": "arrow-right",
                       "widgetId": "jmxk0bls65",
-                      "isVisible": "{{appsmith.store.table === 'customers' || appsmith.store.table === 'invoices' ? false : true}}",
+                      "isVisible": "{{appsmith.store.table === 'customers' || appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? false : true}}",
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "mrnctdb5kh",
@@ -1565,6 +1565,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "isVisible"
+                        },
+                        {
+                          "key": "menuItems.menuItem3.isVisible"
                         }
                       ],
                       "displayName": "Menu Button",
@@ -1600,6 +1603,9 @@
                         },
                         {
                           "key": "menuItems.menuItem3.label"
+                        },
+                        {
+                          "key": "menuItems.menuItem3.isVisible"
                         }
                       ],
                       "isDisabled": false,
@@ -1610,7 +1616,7 @@
                       "widgetId": "q3goech9zd",
                       "menuItems": {
                         "menuItem1": {
-                          "label": "{{appsmith.store.table === 'invoices' ? 'Customer': null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? 'Customer': null}}",
                           "id": "menuItem1",
                           "widgetId": "",
                           "isVisible": true,
@@ -1620,7 +1626,7 @@
                           "iconColor": "#38AFF4"
                         },
                         "menuItem2": {
-                          "label": "{{appsmith.store.table === 'invoices' ? 'Job' : null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? 'Job' : null}}",
                           "id": "menuItem2",
                           "widgetId": "",
                           "isVisible": true,
@@ -1631,17 +1637,17 @@
                           "iconColor": "#38AFF4"
                         },
                         "menuItem3": {
-                          "label": "{{appsmith.store.table === 'invoices' ? 'Email' : null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? 'Email' : null}}",
                           "id": "menuItem3",
                           "widgetId": "",
-                          "isVisible": true,
+                          "isVisible": "{{appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? true : false}}",
                           "isDisabled": false,
                           "index": 2,
                           "iconColor": "#38AFF4",
                           "onClick": "{{widget_events.container1_menu_button3_onclick()}}"
                         }
                       },
-                      "isVisible": "{{appsmith.store.table === 'invoices' ? true : false}}",
+                      "isVisible": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? true : false}}",
                       "label": "Search",
                       "version": 1,
                       "parentId": "mrnctdb5kh",

@@ -8,10 +8,10 @@
   "icon": "couples",
   "slug": "sandbox-do-not-use",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "evaluationVersion": 2,
   "createdAt": {
