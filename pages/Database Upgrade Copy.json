@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 912,
+          "rightColumn": 1296,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -237,27 +237,62 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "gasservice_id",
                         "job_id",
-                        "jobno",
-                        "property_id",
-                        "company_id",
-                        "gascert",
+                        "customer_id",
+                        "prefix",
+                        "certno",
                         "engineer_id",
-                        "jobtype_id",
-                        "description",
-                        "details",
-                        "goahead",
-                        "custref",
-                        "priority",
-                        "archive",
+                        "date",
+                        "duedate",
+                        "issued",
+                        "email_id",
                         "created",
-                        "createdby",
                         "modified",
-                        "due_date",
                         "modifiedby",
-                        "invoiced",
+                        "typeofwork",
+                        "co2ratio",
+                        "co",
+                        "co2",
+                        "low_co2ratio",
+                        "low_co",
+                        "low_co2",
+                        "operating",
+                        "currentstds",
+                        "warningleft",
+                        "controls",
+                        "pressure",
+                        "heat",
+                        "fluesafe",
+                        "ventilation",
+                        "emission",
+                        "burnpress",
+                        "tightness",
+                        "carbonmon",
+                        "safe",
+                        "function",
+                        "replacement",
+                        "magnet",
+                        "improve",
+                        "comments",
+                        "working",
+                        "hotwater",
+                        "timer",
+                        "outlet",
+                        "pipework",
+                        "pdf",
+                        "receiver",
+                        "receiversig",
+                        "remsent",
+                        "appliance_id",
+                        "sigimg",
+                        "sigimgtype",
                         "uuid",
-                        "job_status_id"
+                        "company_id",
+                        "archive",
+                        "fga_pdf",
+                        "fga_data",
+                        "water_quality"
                       ],
                       "isVisibleDownload": false,
                       "dynamicPropertyPathList": [],
@@ -304,46 +339,151 @@
                           "key": "primaryColumns.modifiedby.computedValue"
                         },
                         {
-                          "key": "primaryColumns.createdby.computedValue"
+                          "key": "primaryColumns.customer_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.jobno.computedValue"
+                          "key": "primaryColumns.issued.computedValue"
                         },
                         {
-                          "key": "primaryColumns.property_id.computedValue"
+                          "key": "primaryColumns.email_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.gascert.computedValue"
+                          "key": "primaryColumns.pdf.computedValue"
                         },
                         {
                           "key": "primaryColumns.engineer_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.jobtype_id.computedValue"
+                          "key": "primaryColumns.date.computedValue"
                         },
                         {
-                          "key": "primaryColumns.description.computedValue"
+                          "key": "primaryColumns.tightness.computedValue"
                         },
                         {
-                          "key": "primaryColumns.details.computedValue"
+                          "key": "primaryColumns.receiver.computedValue"
                         },
                         {
-                          "key": "primaryColumns.goahead.computedValue"
+                          "key": "primaryColumns.receiversig.computedValue"
                         },
                         {
-                          "key": "primaryColumns.custref.computedValue"
+                          "key": "primaryColumns.remsent.computedValue"
                         },
                         {
-                          "key": "primaryColumns.priority.computedValue"
+                          "key": "primaryColumns.sigimg.computedValue"
                         },
                         {
-                          "key": "primaryColumns.due_date.computedValue"
+                          "key": "primaryColumns.sigimgtype.computedValue"
                         },
                         {
-                          "key": "primaryColumns.invoiced.computedValue"
+                          "key": "primaryColumns.fga_pdf.computedValue"
                         },
                         {
-                          "key": "primaryColumns.job_status_id.computedValue"
+                          "key": "primaryColumns.gasservice_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.prefix.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.certno.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.duedate.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.typeofwork.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.co2ratio.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.co.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.co2.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.low_co2ratio.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.low_co.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.low_co2.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.operating.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.currentstds.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.warningleft.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.controls.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.pressure.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.heat.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fluesafe.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ventilation.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.emission.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.burnpress.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.carbonmon.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.safe.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.function.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.replacement.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.magnet.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.improve.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.comments.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.working.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.hotwater.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.timer.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.outlet.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.pipework.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.appliance_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fga_data.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.water_quality.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -467,27 +607,10 @@
                           "label": "modifiedby",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.modifiedby))}}"
                         },
-                        "createdby": {
-                          "index": 18,
-                          "width": 150,
-                          "id": "createdby",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "createdby",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.createdby))}}"
-                        },
-                        "jobno": {
+                        "customer_id": {
                           "index": 1,
                           "width": 150,
-                          "id": "jobno",
+                          "id": "customer_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -498,13 +621,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "jobno",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.jobno))}}"
+                          "label": "customer_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.customer_id))}}"
                         },
-                        "property_id": {
-                          "index": 2,
+                        "issued": {
+                          "index": 5,
                           "width": 150,
-                          "id": "property_id",
+                          "id": "issued",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -515,13 +638,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "property_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.property_id))}}"
+                          "label": "issued",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.issued))}}"
                         },
-                        "gascert": {
-                          "index": 4,
+                        "email_id": {
+                          "index": 6,
                           "width": 150,
-                          "id": "gascert",
+                          "id": "email_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -532,11 +655,28 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "gascert",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gascert))}}"
+                          "label": "email_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email_id))}}"
+                        },
+                        "pdf": {
+                          "index": 14,
+                          "width": 150,
+                          "id": "pdf",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "pdf",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.pdf))}}"
                         },
                         "engineer_id": {
-                          "index": 5,
+                          "index": 15,
                           "width": 150,
                           "id": "engineer_id",
                           "horizontalAlignment": "CENTER",
@@ -552,112 +692,10 @@
                           "label": "engineer_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.engineer_id))}}"
                         },
-                        "jobtype_id": {
-                          "index": 6,
-                          "width": 150,
-                          "id": "jobtype_id",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "jobtype_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.jobtype_id))}}"
-                        },
-                        "description": {
-                          "index": 7,
-                          "width": 150,
-                          "id": "description",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "description",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
-                        },
-                        "details": {
-                          "index": 8,
-                          "width": 150,
-                          "id": "details",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "details",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.details))}}"
-                        },
-                        "goahead": {
-                          "index": 9,
-                          "width": 150,
-                          "id": "goahead",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "goahead",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.goahead))}}"
-                        },
-                        "custref": {
-                          "index": 10,
-                          "width": 150,
-                          "id": "custref",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "custref",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.custref))}}"
-                        },
-                        "priority": {
-                          "index": 11,
-                          "width": 150,
-                          "id": "priority",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "priority",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.priority))}}"
-                        },
-                        "due_date": {
+                        "date": {
                           "index": 16,
                           "width": 150,
-                          "id": "due_date",
+                          "id": "date",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -668,13 +706,285 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "due_date",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.due_date))}}"
+                          "label": "date",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.date))}}"
                         },
-                        "invoiced": {
+                        "tightness": {
+                          "index": 19,
+                          "width": 150,
+                          "id": "tightness",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "tightness",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.tightness))}}"
+                        },
+                        "receiver": {
+                          "index": 23,
+                          "width": 150,
+                          "id": "receiver",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "receiver",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiver))}}"
+                        },
+                        "receiversig": {
+                          "index": 24,
+                          "width": 150,
+                          "id": "receiversig",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "receiversig",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiversig))}}"
+                        },
+                        "remsent": {
+                          "index": 25,
+                          "width": 150,
+                          "id": "remsent",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "remsent",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.remsent))}}"
+                        },
+                        "sigimg": {
+                          "index": 26,
+                          "width": 150,
+                          "id": "sigimg",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "sigimg",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimg))}}"
+                        },
+                        "sigimgtype": {
+                          "index": 27,
+                          "width": 150,
+                          "id": "sigimgtype",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "sigimgtype",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimgtype))}}"
+                        },
+                        "fga_pdf": {
+                          "index": 34,
+                          "width": 150,
+                          "id": "fga_pdf",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fga_pdf",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.fga_pdf))}}"
+                        },
+                        "gasservice_id": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "gasservice_id",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "gasservice_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gasservice_id))}}"
+                        },
+                        "prefix": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "prefix",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "prefix",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.prefix))}}"
+                        },
+                        "certno": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "certno",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "certno",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.certno))}}"
+                        },
+                        "duedate": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "duedate",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "duedate",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.duedate))}}"
+                        },
+                        "typeofwork": {
+                          "index": 13,
+                          "width": 150,
+                          "id": "typeofwork",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "typeofwork",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.typeofwork))}}"
+                        },
+                        "co2ratio": {
+                          "index": 14,
+                          "width": 150,
+                          "id": "co2ratio",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "co2ratio",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.co2ratio))}}"
+                        },
+                        "co": {
+                          "index": 15,
+                          "width": 150,
+                          "id": "co",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "co",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.co))}}"
+                        },
+                        "co2": {
+                          "index": 16,
+                          "width": 150,
+                          "id": "co2",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "co2",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.co2))}}"
+                        },
+                        "low_co2ratio": {
+                          "index": 17,
+                          "width": 150,
+                          "id": "low_co2ratio",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "low_co2ratio",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.low_co2ratio))}}"
+                        },
+                        "low_co": {
                           "index": 18,
                           "width": 150,
-                          "id": "invoiced",
+                          "id": "low_co",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -685,13 +995,30 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "invoiced",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.invoiced))}}"
+                          "label": "low_co",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.low_co))}}"
                         },
-                        "job_status_id": {
+                        "low_co2": {
+                          "index": 19,
+                          "width": 150,
+                          "id": "low_co2",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "low_co2",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.low_co2))}}"
+                        },
+                        "operating": {
                           "index": 20,
                           "width": 150,
-                          "id": "job_status_id",
+                          "id": "operating",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -702,8 +1029,416 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "job_status_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.job_status_id))}}"
+                          "label": "operating",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.operating))}}"
+                        },
+                        "currentstds": {
+                          "index": 21,
+                          "width": 150,
+                          "id": "currentstds",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "currentstds",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.currentstds))}}"
+                        },
+                        "warningleft": {
+                          "index": 22,
+                          "width": 150,
+                          "id": "warningleft",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "warningleft",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.warningleft))}}"
+                        },
+                        "controls": {
+                          "index": 23,
+                          "width": 150,
+                          "id": "controls",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "controls",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.controls))}}"
+                        },
+                        "pressure": {
+                          "index": 24,
+                          "width": 150,
+                          "id": "pressure",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "pressure",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.pressure))}}"
+                        },
+                        "heat": {
+                          "index": 25,
+                          "width": 150,
+                          "id": "heat",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "heat",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.heat))}}"
+                        },
+                        "fluesafe": {
+                          "index": 26,
+                          "width": 150,
+                          "id": "fluesafe",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fluesafe",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.fluesafe))}}"
+                        },
+                        "ventilation": {
+                          "index": 27,
+                          "width": 150,
+                          "id": "ventilation",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "ventilation",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.ventilation))}}"
+                        },
+                        "emission": {
+                          "index": 28,
+                          "width": 150,
+                          "id": "emission",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "emission",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.emission))}}"
+                        },
+                        "burnpress": {
+                          "index": 29,
+                          "width": 150,
+                          "id": "burnpress",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "burnpress",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.burnpress))}}"
+                        },
+                        "carbonmon": {
+                          "index": 31,
+                          "width": 150,
+                          "id": "carbonmon",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "carbonmon",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.carbonmon))}}"
+                        },
+                        "safe": {
+                          "index": 32,
+                          "width": 150,
+                          "id": "safe",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "safe",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.safe))}}"
+                        },
+                        "function": {
+                          "index": 33,
+                          "width": 150,
+                          "id": "function",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "function",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.function))}}"
+                        },
+                        "replacement": {
+                          "index": 34,
+                          "width": 150,
+                          "id": "replacement",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "replacement",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.replacement))}}"
+                        },
+                        "magnet": {
+                          "index": 35,
+                          "width": 150,
+                          "id": "magnet",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "magnet",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.magnet))}}"
+                        },
+                        "improve": {
+                          "index": 36,
+                          "width": 150,
+                          "id": "improve",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "improve",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.improve))}}"
+                        },
+                        "comments": {
+                          "index": 37,
+                          "width": 150,
+                          "id": "comments",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "comments",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.comments))}}"
+                        },
+                        "working": {
+                          "index": 38,
+                          "width": 150,
+                          "id": "working",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "working",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.working))}}"
+                        },
+                        "hotwater": {
+                          "index": 39,
+                          "width": 150,
+                          "id": "hotwater",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "hotwater",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.hotwater))}}"
+                        },
+                        "timer": {
+                          "index": 40,
+                          "width": 150,
+                          "id": "timer",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "timer",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.timer))}}"
+                        },
+                        "outlet": {
+                          "index": 41,
+                          "width": 150,
+                          "id": "outlet",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "outlet",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.outlet))}}"
+                        },
+                        "pipework": {
+                          "index": 42,
+                          "width": 150,
+                          "id": "pipework",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "pipework",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.pipework))}}"
+                        },
+                        "appliance_id": {
+                          "index": 47,
+                          "width": 150,
+                          "id": "appliance_id",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "appliance_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.appliance_id))}}"
+                        },
+                        "fga_data": {
+                          "index": 54,
+                          "width": 150,
+                          "id": "fga_data",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fga_data",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.fga_data))}}"
+                        },
+                        "water_quality": {
+                          "index": 55,
+                          "width": 150,
+                          "id": "water_quality",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "water_quality",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.water_quality))}}"
                         }
                       },
                       "delimiter": ",",
@@ -1177,7 +1912,7 @@
                               ],
                               "shouldTruncate": true,
                               "borderWidth": "\n",
-                              "truncateButtonColor": "#FFC13D",
+                              "truncateButtonColor": "#38AFF4",
                               "text": "{{widgets_values.container1_value()}}",
                               "key": "a92jsnot4h",
                               "rightColumn": 64,
@@ -1253,7 +1988,7 @@
                       "isDefaultClickDisabled": true,
                       "iconName": "arrow-right",
                       "widgetId": "jmxk0bls65",
-                      "isVisible": "{{appsmith.store.table === 'customers' || appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? false : true}}",
+                      "isVisible": "{{appsmith.store.table === 'customers' || appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? false : true}}",
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "mrnctdb5kh",
@@ -1322,17 +2057,17 @@
                       "widgetId": "q3goech9zd",
                       "menuItems": {
                         "menuItem1": {
-                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? 'Customer': null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? 'Customer': null}}",
                           "id": "menuItem1",
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 0,
-                          "onClick": "{{widget_events.container1_button1_onclick()}}",
+                          "onClick": "{{widget_events.container1_menu_button1_onclick()}}",
                           "iconColor": "#38AFF4"
                         },
                         "menuItem2": {
-                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? 'Job' : null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? 'Job' : null}}",
                           "id": "menuItem2",
                           "widgetId": "",
                           "isVisible": true,
@@ -1353,7 +2088,7 @@
                           "onClick": "{{widget_events.container1_menu_button3_onclick()}}"
                         }
                       },
-                      "isVisible": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' ? true : false}}",
+                      "isVisible": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices'? true : false}}",
                       "label": "Search",
                       "version": 1,
                       "parentId": "mrnctdb5kh",
