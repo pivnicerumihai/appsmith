@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\n\t\t\tcontainer2_select_record.clear(); \n\t\t\tcontainer3_select_record.clear();\n\t\t storeValue('table',dropdown_record_type.selectedOptionValue)\n\t\tselect_record.run();\n\t\t\n\t\n\t}",
+      "body": "() => {\n\t\t\n\t\t\tcontainer2_select_record.clear(); \n\t\t\tcontainer3_select_record.clear();\n\t\tcontainer2_text.text = null;\n\t\tcontainer3_text.text = null;\n\t\t  storeValue('table',dropdown_record_type.selectedOptionValue)\n\t  \tselect_record.run();\n\t\t\n\t\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\n\t\t\tcontainer2_select_record.clear(); \n\t\t\tcontainer3_select_record.clear();\n\t\t storeValue('table',dropdown_record_type.selectedOptionValue)\n\t\tselect_record.run();\n\t\t\n\t\n\t}"
+      "() => {\n\t\t\n\t\t\tcontainer2_select_record.clear(); \n\t\t\tcontainer3_select_record.clear();\n\t\tcontainer2_text.text = null;\n\t\tcontainer3_text.text = null;\n\t\t  storeValue('table',dropdown_record_type.selectedOptionValue)\n\t  \tselect_record.run();\n\t\t\n\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

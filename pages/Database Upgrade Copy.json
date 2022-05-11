@@ -193,6 +193,9 @@
                 },
                 {
                   "key": "isVisible"
+                },
+                {
+                  "key": "tabsObj.tabs3jvsdpb5z.isVisible"
                 }
               ],
               "displayName": "Tabs",
@@ -207,7 +210,11 @@
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
               "leftColumn": 0,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tabsObj.tabs3jvsdpb5z.isVisible"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
@@ -797,6 +804,7 @@
                       "key": "7fmb2cnbwz",
                       "rightColumn": 48,
                       "isDefaultClickDisabled": true,
+                      "iconName": "arrow-right",
                       "widgetId": "fv07sj69r2",
                       "isVisible": "{{appsmith.store.container2_record_type === 'customers' ? false : true}}",
                       "recaptchaType": "V3",
@@ -1281,7 +1289,7 @@
                   "id": "tabs3jvsdpb5z",
                   "label": "View By Container",
                   "widgetId": "mrnctdb5kh",
-                  "isVisible": true,
+                  "isVisible": "{{select_record.data.length === 1 ? true : false}}",
                   "index": 0
                 }
               },
