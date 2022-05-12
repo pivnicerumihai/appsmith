@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 912,
+          "rightColumn": 1296,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -237,49 +237,36 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "invoice_id",
-                        "customer_id",
-                        "company_id",
+                        "jobrec_id",
                         "job_id",
-                        "quote",
+                        "customer_id",
+                        "property_id",
+                        "prefix",
+                        "certno",
+                        "engineer_id",
+                        "date",
                         "issued",
                         "email_id",
-                        "totalamount",
-                        "amtpaid",
-                        "prefix",
-                        "invoiceno",
-                        "dateissued",
-                        "paid",
-                        "reconciled",
-                        "pdf",
-                        "archive",
                         "created",
-                        "modified_timestamp",
-                        "createdby",
                         "modified",
                         "modifiedby",
-                        "reminder1",
-                        "reminder2",
-                        "reminder3",
-                        "isvatinc",
-                        "companyname",
-                        "building",
-                        "street",
-                        "town",
-                        "region",
-                        "postcode",
-                        "altaddress",
-                        "delreason",
-                        "uuid",
-                        "currency",
-                        "reissued",
                         "jobref",
-                        "integration_xero_invoicenumber",
-                        "integration_sage_invoicenumber",
-                        "ledger_account_id",
-                        "integration_xero_paymentid",
-                        "integration_quickbooks_id",
-                        "drc_vat"
+                        "notes",
+                        "sparesreq",
+                        "awaitingparts",
+                        "completed",
+                        "hours",
+                        "timearrived",
+                        "timedeparted",
+                        "pdf",
+                        "receiver",
+                        "receiversig",
+                        "remsent",
+                        "sigimg",
+                        "sigimgtype",
+                        "uuid",
+                        "company_id",
+                        "archive"
                       ],
                       "isVisibleDownload": false,
                       "dynamicPropertyPathList": [],
@@ -326,16 +313,7 @@
                           "key": "primaryColumns.modifiedby.computedValue"
                         },
                         {
-                          "key": "primaryColumns.createdby.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.invoice_id.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.customer_id.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.quote.computedValue"
                         },
                         {
                           "key": "primaryColumns.issued.computedValue"
@@ -344,94 +322,64 @@
                           "key": "primaryColumns.email_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.totalamount.computedValue"
+                          "key": "primaryColumns.pdf.computedValue"
                         },
                         {
-                          "key": "primaryColumns.amtpaid.computedValue"
+                          "key": "primaryColumns.engineer_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.notes.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.receiver.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.receiversig.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.remsent.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.sigimg.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.sigimgtype.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.jobrec_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.property_id.computedValue"
                         },
                         {
                           "key": "primaryColumns.prefix.computedValue"
                         },
                         {
-                          "key": "primaryColumns.invoiceno.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.dateissued.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.paid.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.reconciled.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.pdf.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.modified_timestamp.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.reminder1.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.reminder2.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.reminder3.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.isvatinc.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.companyname.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.building.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.street.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.town.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.region.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.postcode.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.altaddress.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.delreason.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.currency.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.reissued.computedValue"
+                          "key": "primaryColumns.certno.computedValue"
                         },
                         {
                           "key": "primaryColumns.jobref.computedValue"
                         },
                         {
-                          "key": "primaryColumns.integration_xero_invoicenumber.computedValue"
+                          "key": "primaryColumns.sparesreq.computedValue"
                         },
                         {
-                          "key": "primaryColumns.integration_sage_invoicenumber.computedValue"
+                          "key": "primaryColumns.awaitingparts.computedValue"
                         },
                         {
-                          "key": "primaryColumns.ledger_account_id.computedValue"
+                          "key": "primaryColumns.completed.computedValue"
                         },
                         {
-                          "key": "primaryColumns.integration_xero_paymentid.computedValue"
+                          "key": "primaryColumns.hours.computedValue"
                         },
                         {
-                          "key": "primaryColumns.integration_quickbooks_id.computedValue"
+                          "key": "primaryColumns.timearrived.computedValue"
                         },
                         {
-                          "key": "primaryColumns.drc_vat.computedValue"
+                          "key": "primaryColumns.timedeparted.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -555,40 +503,6 @@
                           "label": "modifiedby",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.modifiedby))}}"
                         },
-                        "createdby": {
-                          "index": 14,
-                          "width": 150,
-                          "id": "createdby",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "createdby",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.createdby))}}"
-                        },
-                        "invoice_id": {
-                          "index": 0,
-                          "width": 150,
-                          "id": "invoice_id",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "invoice_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.invoice_id))}}"
-                        },
                         "customer_id": {
                           "index": 1,
                           "width": 150,
@@ -605,23 +519,6 @@
                           "isDerived": false,
                           "label": "customer_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.customer_id))}}"
-                        },
-                        "quote": {
-                          "index": 4,
-                          "width": 150,
-                          "id": "quote",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "quote",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.quote))}}"
                         },
                         "issued": {
                           "index": 5,
@@ -657,125 +554,6 @@
                           "label": "email_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email_id))}}"
                         },
-                        "totalamount": {
-                          "index": 7,
-                          "width": 150,
-                          "id": "totalamount",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "totalamount",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.totalamount))}}"
-                        },
-                        "amtpaid": {
-                          "index": 8,
-                          "width": 150,
-                          "id": "amtpaid",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "amtpaid",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.amtpaid))}}"
-                        },
-                        "prefix": {
-                          "index": 9,
-                          "width": 150,
-                          "id": "prefix",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "prefix",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.prefix))}}"
-                        },
-                        "invoiceno": {
-                          "index": 10,
-                          "width": 150,
-                          "id": "invoiceno",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "invoiceno",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.invoiceno))}}"
-                        },
-                        "dateissued": {
-                          "index": 11,
-                          "width": 150,
-                          "id": "dateissued",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "dateissued",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.dateissued))}}"
-                        },
-                        "paid": {
-                          "index": 12,
-                          "width": 150,
-                          "id": "paid",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "paid",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.paid))}}"
-                        },
-                        "reconciled": {
-                          "index": 13,
-                          "width": 150,
-                          "id": "reconciled",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "reconciled",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.reconciled))}}"
-                        },
                         "pdf": {
                           "index": 14,
                           "width": 150,
@@ -793,10 +571,10 @@
                           "label": "pdf",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.pdf))}}"
                         },
-                        "modified_timestamp": {
-                          "index": 17,
+                        "engineer_id": {
+                          "index": 6,
                           "width": 150,
-                          "id": "modified_timestamp",
+                          "id": "engineer_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -807,13 +585,64 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "modified_timestamp",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.modified_timestamp))}}"
+                          "label": "engineer_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.engineer_id))}}"
                         },
-                        "reminder1": {
+                        "date": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "date",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "date",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.date))}}"
+                        },
+                        "notes": {
+                          "index": 13,
+                          "width": 150,
+                          "id": "notes",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "notes",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}"
+                        },
+                        "receiver": {
+                          "index": 20,
+                          "width": 150,
+                          "id": "receiver",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "receiver",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiver))}}"
+                        },
+                        "receiversig": {
                           "index": 21,
                           "width": 150,
-                          "id": "reminder1",
+                          "id": "receiversig",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -824,13 +653,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "reminder1",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.reminder1))}}"
+                          "label": "receiversig",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiversig))}}"
                         },
-                        "reminder2": {
+                        "remsent": {
                           "index": 22,
                           "width": 150,
-                          "id": "reminder2",
+                          "id": "remsent",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -841,13 +670,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "reminder2",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.reminder2))}}"
+                          "label": "remsent",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.remsent))}}"
                         },
-                        "reminder3": {
+                        "sigimg": {
                           "index": 23,
                           "width": 150,
-                          "id": "reminder3",
+                          "id": "sigimg",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -858,13 +687,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "reminder3",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.reminder3))}}"
+                          "label": "sigimg",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimg))}}"
                         },
-                        "isvatinc": {
+                        "sigimgtype": {
                           "index": 24,
                           "width": 150,
-                          "id": "isvatinc",
+                          "id": "sigimgtype",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -875,13 +704,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "isvatinc",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.isvatinc))}}"
+                          "label": "sigimgtype",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimgtype))}}"
                         },
-                        "companyname": {
-                          "index": 25,
+                        "jobrec_id": {
+                          "index": 0,
                           "width": 150,
-                          "id": "companyname",
+                          "id": "jobrec_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -892,13 +721,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "companyname",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.companyname))}}"
+                          "label": "jobrec_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.jobrec_id))}}"
                         },
-                        "building": {
-                          "index": 26,
+                        "property_id": {
+                          "index": 3,
                           "width": 150,
-                          "id": "building",
+                          "id": "property_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -909,13 +738,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "building",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.building))}}"
+                          "label": "property_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.property_id))}}"
                         },
-                        "street": {
-                          "index": 27,
+                        "prefix": {
+                          "index": 4,
                           "width": 150,
-                          "id": "street",
+                          "id": "prefix",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -926,13 +755,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "street",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.street))}}"
+                          "label": "prefix",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.prefix))}}"
                         },
-                        "town": {
-                          "index": 28,
+                        "certno": {
+                          "index": 5,
                           "width": 150,
-                          "id": "town",
+                          "id": "certno",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -943,113 +772,11 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "town",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.town))}}"
-                        },
-                        "region": {
-                          "index": 29,
-                          "width": 150,
-                          "id": "region",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "region",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.region))}}"
-                        },
-                        "postcode": {
-                          "index": 30,
-                          "width": 150,
-                          "id": "postcode",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "postcode",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.postcode))}}"
-                        },
-                        "altaddress": {
-                          "index": 31,
-                          "width": 150,
-                          "id": "altaddress",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "altaddress",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.altaddress))}}"
-                        },
-                        "delreason": {
-                          "index": 32,
-                          "width": 150,
-                          "id": "delreason",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "delreason",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.delreason))}}"
-                        },
-                        "currency": {
-                          "index": 34,
-                          "width": 150,
-                          "id": "currency",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "currency",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.currency))}}"
-                        },
-                        "reissued": {
-                          "index": 35,
-                          "width": 150,
-                          "id": "reissued",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "reissued",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.reissued))}}"
+                          "label": "certno",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.certno))}}"
                         },
                         "jobref": {
-                          "index": 36,
+                          "index": 13,
                           "width": 150,
                           "id": "jobref",
                           "horizontalAlignment": "CENTER",
@@ -1065,10 +792,10 @@
                           "label": "jobref",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.jobref))}}"
                         },
-                        "integration_xero_invoicenumber": {
-                          "index": 37,
+                        "sparesreq": {
+                          "index": 15,
                           "width": 150,
-                          "id": "integration_xero_invoicenumber",
+                          "id": "sparesreq",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1079,13 +806,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "integration_xero_invoicenumber",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.integration_xero_invoicenumber))}}"
+                          "label": "sparesreq",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sparesreq))}}"
                         },
-                        "integration_sage_invoicenumber": {
-                          "index": 38,
+                        "awaitingparts": {
+                          "index": 16,
                           "width": 150,
-                          "id": "integration_sage_invoicenumber",
+                          "id": "awaitingparts",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1096,13 +823,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "integration_sage_invoicenumber",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.integration_sage_invoicenumber))}}"
+                          "label": "awaitingparts",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.awaitingparts))}}"
                         },
-                        "ledger_account_id": {
-                          "index": 39,
+                        "completed": {
+                          "index": 17,
                           "width": 150,
-                          "id": "ledger_account_id",
+                          "id": "completed",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1113,13 +840,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ledger_account_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.ledger_account_id))}}"
+                          "label": "completed",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.completed))}}"
                         },
-                        "integration_xero_paymentid": {
-                          "index": 40,
+                        "hours": {
+                          "index": 18,
                           "width": 150,
-                          "id": "integration_xero_paymentid",
+                          "id": "hours",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1130,13 +857,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "integration_xero_paymentid",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.integration_xero_paymentid))}}"
+                          "label": "hours",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.hours))}}"
                         },
-                        "integration_quickbooks_id": {
-                          "index": 41,
+                        "timearrived": {
+                          "index": 19,
                           "width": 150,
-                          "id": "integration_quickbooks_id",
+                          "id": "timearrived",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1147,13 +874,13 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "integration_quickbooks_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.integration_quickbooks_id))}}"
+                          "label": "timearrived",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.timearrived))}}"
                         },
-                        "drc_vat": {
-                          "index": 42,
+                        "timedeparted": {
+                          "index": 20,
                           "width": 150,
-                          "id": "drc_vat",
+                          "id": "timedeparted",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -1164,8 +891,8 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "drc_vat",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.drc_vat))}}"
+                          "label": "timedeparted",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.timedeparted))}}"
                         }
                       },
                       "delimiter": ",",
@@ -1723,7 +1450,7 @@
                       "isDefaultClickDisabled": true,
                       "iconName": "arrow-right",
                       "widgetId": "jmxk0bls65",
-                      "isVisible": "{{appsmith.store.table === 'customers' || appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? false : true}}",
+                      "isVisible": "{{appsmith.store.table === 'customers' || appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'jobrecs' ? false : true}}",
                       "recaptchaType": "V3",
                       "version": 1,
                       "parentId": "mrnctdb5kh",
@@ -1792,7 +1519,7 @@
                       "widgetId": "q3goech9zd",
                       "menuItems": {
                         "menuItem1": {
-                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? 'Customer': null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'jobrecs' ? 'Customer': null}}",
                           "id": "menuItem1",
                           "widgetId": "",
                           "isVisible": true,
@@ -1802,7 +1529,7 @@
                           "iconColor": "#38AFF4"
                         },
                         "menuItem2": {
-                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? 'Job' : null}}",
+                          "label": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices' ? 'Job' : appsmith.store.table === 'jobrecs' ? 'Property' : null}}",
                           "id": "menuItem2",
                           "widgetId": "",
                           "isVisible": true,
@@ -1813,7 +1540,7 @@
                           "iconColor": "#38AFF4"
                         },
                         "menuItem3": {
-                          "label": "{{appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? 'Email' : null}}",
+                          "label": "{{appsmith.store.table === 'jobrecs' ? 'Job': appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? 'Email' :   null}}",
                           "id": "menuItem3",
                           "widgetId": "",
                           "isVisible": "{{appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? true : false}}",
@@ -1823,7 +1550,7 @@
                           "onClick": "{{widget_events.container1_menu_button3_onclick()}}"
                         }
                       },
-                      "isVisible": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices'? true : false}}",
+                      "isVisible": "{{appsmith.store.table === 'invoices' || appsmith.store.table === 'gscerts' || appsmith.store.table === 'gasservices'|| appsmith.store.table === 'jobrecs'? true : false}}",
                       "label": "Search",
                       "version": 1,
                       "parentId": "mrnctdb5kh",

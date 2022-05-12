@@ -17,7 +17,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM {{appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? 'emails' : null}} where {{appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts'  ? 'email_id' : null}} = {{appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? select_record.data[0].email_id : null}}\n",
+      "body": "SELECT * FROM {{appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? 'emails' : appsmith.store.table === 'jobrecs'? 'jobs' : null}} where {{appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts'  ? 'email_id': appsmith.store.table === 'jobrecs' ? 'job_id' : null}} = {{appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? select_record.data[0].email_id : appsmith.store.table === 'jobrecs' ? select_record.data[0].job_id : null}}\n",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -34,9 +34,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts'  ? 'email_id' : null",
-      "appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? 'emails' : null",
-      "appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? select_record.data[0].email_id : null"
+      "appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts'  ? 'email_id': appsmith.store.table === 'jobrecs' ? 'job_id' : null",
+      "appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? 'emails' : appsmith.store.table === 'jobrecs'? 'jobs' : null",
+      "appsmith.store.table === 'invoices' || appsmith.store.table === 'gasservices' || appsmith.store.table === 'gscerts' ? select_record.data[0].email_id : appsmith.store.table === 'jobrecs' ? select_record.data[0].job_id : null"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
