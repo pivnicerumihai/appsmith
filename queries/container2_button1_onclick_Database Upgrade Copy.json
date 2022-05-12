@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\n\t\tcontainer3_select_record.run();\n\t\n\t}",
+      "body": "() => {\n\t\t\n\t\tstoreValue('container3_visibility', true);\n\t\tcontainer3_select_record.run();\n\t\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\n\t\tcontainer3_select_record.run();\n\t\n\t}"
+      "() => {\n\t\t\n\t\tstoreValue('container3_visibility', true);\n\t\tcontainer3_select_record.run();\n\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

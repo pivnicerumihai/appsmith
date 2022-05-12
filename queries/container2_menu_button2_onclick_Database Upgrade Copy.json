@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\tcontainer3_select_record2.run();\n\tswitch(appsmith.store.container2_record_type){\n\t\tcase 'invoices':\n\t\t\tstoreValue('query2',container3_select_record2.data[0]);\n\t\t\tstoreValue('container3_record_type', 'jobs');\n\t\t\tbreak;\n\t}\n}",
+      "body": "() => {\n\t\n\t\n\tstoreValue('container3_visibility', true);\t\n\tcontainer3_select_record2.run();\n\tswitch(appsmith.store.container2_record_type){\n\t\tcase 'invoices':\n\t\t\tstoreValue('query2',container3_select_record2.data[0]);\n\t\t\tstoreValue('container3_record_type', 'jobs');\n\t\t\tbreak;\n\t}\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\tcontainer3_select_record2.run();\n\tswitch(appsmith.store.container2_record_type){\n\t\tcase 'invoices':\n\t\t\tstoreValue('query2',container3_select_record2.data[0]);\n\t\t\tstoreValue('container3_record_type', 'jobs');\n\t\t\tbreak;\n\t}\n}"
+      "() => {\n\t\n\t\n\tstoreValue('container3_visibility', true);\t\n\tcontainer3_select_record2.run();\n\tswitch(appsmith.store.container2_record_type){\n\t\tcase 'invoices':\n\t\t\tstoreValue('query2',container3_select_record2.data[0]);\n\t\t\tstoreValue('container3_record_type', 'jobs');\n\t\t\tbreak;\n\t}\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

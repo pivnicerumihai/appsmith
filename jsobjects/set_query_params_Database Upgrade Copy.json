@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\ton_submit_input: () => {\n\t\t\n\t\t\tcontainer3_select_record.clear();\n\t\t\tcontainer3_select_record2.clear();\n\t\t\tcontainer2_select_record.clear(); \n\t\t\tcontainer2_select_record2.clear(); \n\t\t\tcontainer2_select_record3.clear();\t\n\t\t\tcontainer2_text.text = null;\n\t\t\tcontainer3_text.text = null;\n\t\t  storeValue('table',dropdown_record_type.selectedOptionValue)\n\t  \tselect_record.run();\n\t\t\n\t\n\t},\n}",
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\ton_submit_input: () => {\n\t\t\n\n\t\t\tstoreValue('table',dropdown_record_type.selectedOptionValue)\n\t\t\tstoreValue('container2_visibility', false);\n\t\t\tstoreValue('container3_visibility',false);\n\t  \tselect_record.run();\n\t\t\n\t\n\t},\n}",
     "variables": [
       {
         "name": "myVar1",
