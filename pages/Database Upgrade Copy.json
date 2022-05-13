@@ -8,12 +8,12 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1296,
+          "rightColumn": 912,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1080,
+          "bottomRow": 1140,
           "containerStyle": "none",
           "snapRows": 114,
           "parentRowSpace": 1,
@@ -50,11 +50,13 @@
                   "key": "defaultOptionValue"
                 }
               ],
-              "options": "[\n{\n\"label\":\"Customer\",\n\"value\":\"customers\"\n},\n{\n\"label\":\"Job Address\",\n\"value\":\"properties\"\n},\n\t{\n\t\"label\": \"Job\",\n\t\"value\": \"jobs\"\n\t},\n\t{\n\t\"label\":\"Gas Appliance\",\n\t\"value\":\"appliances\"\n\t},\n\t{\n\t\"label\":\"Invoice\",\n\t\"value\":\"invoices\"\n\t},\n\t{\n\t\"label\":\"Cost\",\n\t\"value\":\"costs\"\n\t},\n\t{\n\t\"label\":\"Email\",\n\t\"value\": \"emails\"\n\t},\n\t{\n    \"label\": \"Gas Certificate\",\n    \"value\": \"gscerts\"\n  },\n\t{\n\t\"label\": \"Gas Service\",\n\t\"value\": \"gasservices\"\n\t},\n\t{\n\t\"label\": \"ND Catering\",\n\t\"value\": \"ndcaterings\"\n\t},\n\t{\n\t\"label\" : \"ND Gas Safety\",\n\t\"value\":\"ndgscerts\"\n\t},\n\t{\n\t\"label\": \"Oil Appliance\",\n\t\"value\": \"oilappliances\"\n\t},\n\t{\n\t\"label\": \"CD 11\",\n\t\"value\": \"cd11s\"\n\t},\n\t{\n\t\"label\": \"Legionella\",\n\t\"value\": \"legionellas\"\n\t},\n\t{\n\t\"label\":\"Event\",\n\t\"value\": \"calendar_events\"\n\t},\n\t{\n\t\"label\":\"Inspection\",\n\t\"value\":\"inspections\"\n\t},\n\t{\n\t\"label\":\"Job Sheet\",\n\t\"value\":\"jobrecs\"\n\t},\n\t\t{\n\t\"label\":\"CP2 Cert\",\n \"value\":\"cp2certs\"\n\t}\n]",
+              "options": "[\n{\n\"label\":\"Customer\",\n\"value\":\"customers\"\n},\n{\n\"label\":\"Job Address\",\n\"value\":\"properties\"\n},\n\t{\n\t\"label\": \"Job\",\n\t\"value\": \"jobs\"\n\t},\n\t{\n\t\"label\":\"Gas Appliance\",\n\t\"value\":\"appliances\"\n\t},\n\t{\n\t\"label\":\"Invoice\",\n\t\"value\":\"invoices\"\n\t},\n\t{\n\t\"label\":\"Cost\",\n\t\"value\":\"costs\"\n\t},\n\t{\n\t\"label\":\"Email\",\n\t\"value\": \"emails\"\n\t},\n\t{\n    \"label\": \"Gas Certificate\",\n    \"value\": \"gscerts\"\n  },\n\t{\n\t\"label\": \"Gas Service\",\n\t\"value\": \"gasservices\"\n\t},\n\t{\n\t\"label\": \"ND Catering *\",\n\t\"value\": \"ndcaterings\"\n\t},\n\t{\n\t\"label\" : \"ND Gas Safety *\",\n\t\"value\":\"ndgscerts\"\n\t},\n\t{\n\t\"label\": \"Oil Appliance *\",\n\t\"value\": \"oilappliances\"\n\t},\n\t{\n\t\"label\": \"CD 11 *\",\n\t\"value\": \"cd11s\"\n\t},\n\t{\n\t\"label\": \"Legionella *\",\n\t\"value\": \"legionellas\"\n\t},\n\t{\n\t\"label\":\"Event *\",\n\t\"value\": \"calendar_events\"\n\t},\n\t{\n\t\"label\":\"Inspection *\",\n\t\"value\":\"inspections\"\n\t},\n\t{\n\t\"label\":\"Job Sheet\",\n\t\"value\":\"jobrecs\"\n\t},\n\t\t{\n\t\"label\":\"CP2 Cert *\",\n \"value\":\"cp2certs\"\n\t}\n]",
               "labelStyle": "",
+              "labelTextColor": "",
               "placeholderText": "Select Record",
               "isDisabled": false,
               "key": "yrr33s7b8y",
+              "labelTextSize": "PARAGRAPH",
               "isRequired": false,
               "rightColumn": 16,
               "widgetId": "irhd86uuge",
@@ -313,46 +315,16 @@
                           "key": "primaryColumns.modifiedby.computedValue"
                         },
                         {
-                          "key": "primaryColumns.customer_id.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.issued.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.email_id.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.pdf.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.engineer_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.date.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.notes.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.receiver.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.receiversig.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.remsent.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.sigimg.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.sigimgtype.computedValue"
+                          "key": "primaryColumns.property_id.computedValue"
                         },
                         {
                           "key": "primaryColumns.jobrec_id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.property_id.computedValue"
+                          "key": "primaryColumns.customer_id.computedValue"
                         },
                         {
                           "key": "primaryColumns.prefix.computedValue"
@@ -361,7 +333,19 @@
                           "key": "primaryColumns.certno.computedValue"
                         },
                         {
+                          "key": "primaryColumns.date.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.issued.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.email_id.computedValue"
+                        },
+                        {
                           "key": "primaryColumns.jobref.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.notes.computedValue"
                         },
                         {
                           "key": "primaryColumns.sparesreq.computedValue"
@@ -380,6 +364,24 @@
                         },
                         {
                           "key": "primaryColumns.timedeparted.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.pdf.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.receiver.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.receiversig.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.remsent.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.sigimg.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.sigimgtype.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -503,74 +505,6 @@
                           "label": "modifiedby",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.modifiedby))}}"
                         },
-                        "customer_id": {
-                          "index": 1,
-                          "width": 150,
-                          "id": "customer_id",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "customer_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.customer_id))}}"
-                        },
-                        "issued": {
-                          "index": 5,
-                          "width": 150,
-                          "id": "issued",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "issued",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.issued))}}"
-                        },
-                        "email_id": {
-                          "index": 6,
-                          "width": 150,
-                          "id": "email_id",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "email_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email_id))}}"
-                        },
-                        "pdf": {
-                          "index": 14,
-                          "width": 150,
-                          "id": "pdf",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "pdf",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.pdf))}}"
-                        },
                         "engineer_id": {
                           "index": 6,
                           "width": 150,
@@ -588,10 +522,10 @@
                           "label": "engineer_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.engineer_id))}}"
                         },
-                        "date": {
-                          "index": 7,
+                        "property_id": {
+                          "index": 3,
                           "width": 150,
-                          "id": "date",
+                          "id": "property_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -602,110 +536,8 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "date",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.date))}}"
-                        },
-                        "notes": {
-                          "index": 13,
-                          "width": 150,
-                          "id": "notes",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "notes",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}"
-                        },
-                        "receiver": {
-                          "index": 20,
-                          "width": 150,
-                          "id": "receiver",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "receiver",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiver))}}"
-                        },
-                        "receiversig": {
-                          "index": 21,
-                          "width": 150,
-                          "id": "receiversig",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "receiversig",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiversig))}}"
-                        },
-                        "remsent": {
-                          "index": 22,
-                          "width": 150,
-                          "id": "remsent",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "remsent",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.remsent))}}"
-                        },
-                        "sigimg": {
-                          "index": 23,
-                          "width": 150,
-                          "id": "sigimg",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "sigimg",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimg))}}"
-                        },
-                        "sigimgtype": {
-                          "index": 24,
-                          "width": 150,
-                          "id": "sigimgtype",
-                          "horizontalAlignment": "CENTER",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "sigimgtype",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimgtype))}}"
+                          "label": "property_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.property_id))}}"
                         },
                         "jobrec_id": {
                           "index": 0,
@@ -724,10 +556,10 @@
                           "label": "jobrec_id",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.jobrec_id))}}"
                         },
-                        "property_id": {
-                          "index": 3,
+                        "customer_id": {
+                          "index": 2,
                           "width": 150,
-                          "id": "property_id",
+                          "id": "customer_id",
                           "horizontalAlignment": "CENTER",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -738,8 +570,8 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "property_id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.property_id))}}"
+                          "label": "customer_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.customer_id))}}"
                         },
                         "prefix": {
                           "index": 4,
@@ -775,6 +607,57 @@
                           "label": "certno",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.certno))}}"
                         },
+                        "date": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "date",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "date",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.date))}}"
+                        },
+                        "issued": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "issued",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "issued",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.issued))}}"
+                        },
+                        "email_id": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "email_id",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "email_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email_id))}}"
+                        },
                         "jobref": {
                           "index": 13,
                           "width": 150,
@@ -791,6 +674,23 @@
                           "isDerived": false,
                           "label": "jobref",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.jobref))}}"
+                        },
+                        "notes": {
+                          "index": 14,
+                          "width": 150,
+                          "id": "notes",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "notes",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}"
                         },
                         "sparesreq": {
                           "index": 15,
@@ -893,6 +793,108 @@
                           "isDerived": false,
                           "label": "timedeparted",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.timedeparted))}}"
+                        },
+                        "pdf": {
+                          "index": 21,
+                          "width": 150,
+                          "id": "pdf",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "pdf",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.pdf))}}"
+                        },
+                        "receiver": {
+                          "index": 22,
+                          "width": 150,
+                          "id": "receiver",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "receiver",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiver))}}"
+                        },
+                        "receiversig": {
+                          "index": 23,
+                          "width": 150,
+                          "id": "receiversig",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "receiversig",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.receiversig))}}"
+                        },
+                        "remsent": {
+                          "index": 24,
+                          "width": 150,
+                          "id": "remsent",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "remsent",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.remsent))}}"
+                        },
+                        "sigimg": {
+                          "index": 25,
+                          "width": 150,
+                          "id": "sigimg",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "sigimg",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimg))}}"
+                        },
+                        "sigimgtype": {
+                          "index": 26,
+                          "width": 150,
+                          "id": "sigimgtype",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "PARAGRAPH",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "sigimgtype",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.sigimgtype))}}"
                         }
                       },
                       "delimiter": ",",
@@ -1543,7 +1545,7 @@
                           "label": "{{appsmith.store.table === 'jobrecs' ? 'Job': appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? 'Email' :   null}}",
                           "id": "menuItem3",
                           "widgetId": "",
-                          "isVisible": "{{appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? true : false}}",
+                          "isVisible": "{{appsmith.store.table === 'jobrecs' ? true : appsmith.store.table === 'invoices' || select_record.data[0].email_id != 0? true : false}}",
                           "isDisabled": false,
                           "index": 2,
                           "iconColor": "#38AFF4",
@@ -1601,6 +1603,37 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 4,
+              "bottomRow": 8,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 51,
+              "dynamicBindingPathList": [],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "* Container View not Available",
+              "key": "ody40wyb8l",
+              "rightColumn": 64,
+              "textAlign": "LEFT",
+              "widgetId": "eq7uudyj5p",
+              "isVisible": true,
+              "fontStyle": "",
+              "textColor": "#231F20",
+              "shouldScroll": false,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH2"
             }
           ]
         },
@@ -1613,6 +1646,7 @@
           "Canvas6CopyCopy",
           "MainContainer",
           "Table1",
+          "Text1",
           "button_container1_search",
           "button_container2_search",
           "company_id_checkbox",
